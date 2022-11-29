@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Practice</title>
+  </head>
+  <body class="bg-gray-900">
+    <!-- <h1 class="mx-auto text-center">Javascript Factorials</h1> -->
+
+    <h1
+      class="bg-gray-900 text-white mx-auto text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    >
+      JavaScript Factorials
+    </h1>
+    <p
+      class="mx-auto text-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+    >
+      Here we are going to wite awesome code to take the print the factorial of
+      a number
+    </p>
+
+    <div class="mx-auto text-center">
+      <label for="input" class="text-white text-center text-lg p-3"
+        >Love for Factorials:</label
+      >
+      <input
+        type="text"
+        placeholder="Enter a Number "
+        id="number"
+        class="text-lg text-gray-900 border-4"
+      />
+
+      <span
+        ><h2 class="bg-gray-900 text-white text-4xl p-4">
+          The factorial of the number is:
+        </h2>
+
+        <p id="factorial" class="bg-gray-900 text-white text-4xl p-1 mb-6"></p
+      ></span>
+
+      <!-- <button id="mybtn" class="bg-gray-900 text-white" onclick="handleclick">
+        Find the Factorial!
+      </button> -->
+
+      <button
+        class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+        onclick="handleclick()"
+      >
+        <span
+          class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-purple-700 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+        >
+          Find the Factorial
+        </span>
+      </button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
