@@ -19,36 +19,60 @@
     <p
       class="mx-auto text-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
     >
-      Here we are going to write awesome code to ejnoy creating ToDos and
-      completing them
+      Here we are going to write awesome code to ejnoy validating forms
     </p>
 
     <!-- Form -->
 
     <div class="m-6 mb-6">
       <label
-        for="todo"
+        for="username-success"
         class="block mb-2 text-sm font-medium text-white dark:text-white"
-        >Type in a ToDo</label
+        >Your name</label
       >
       <input
         type="text"
         id="inputUsername"
-        class="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 text-white"
-        placeholder="Enter a Todo"
+        class="border text-sm rounded-lg block w-full p-2.5"
+        placeholder="Enter your name"
       />
       <p
         id="usernameSuccessPara"
         class="mt-2 text-sm text-green-600 dark:text-green-500 hidden"
       >
-        <span class="font-medium">Alright!</span> Valid Todo Entry
+        <span class="font-medium">Alright!</span> Username is Valid!
       </p>
       <p
         id="usernameFaliurePara"
         class="mt-2 text-sm text-green-red dark:text-red-500 hidden"
       >
-        <span class="font-medium">Oops!</span> Todo Must be at least 8
-        characters long
+        <span class="font-medium">Oops!</span> Username is Invalid!
+      </p>
+    </div>
+    <div class="m-6">
+      <label
+        for="username-error"
+        class="block mb-2 text-sm font-medium text-white"
+        >Email</label
+      >
+      <input
+        type="text"
+        id="inputEmail"
+        class="text-sm rounded-lg block w-full p-2.5"
+        placeholder="Enter your Email"
+      />
+      <p
+        id="emailSuccessPara"
+        class="mt-2 text-sm text-green-600 dark:text-green-500 hidden"
+      >
+        <span class="font-medium">Alright!</span> Email is Valid!
+      </p>
+      <p
+        id="emailFaliurePara"
+        class="mt-2 text-sm text-green-red dark:text-red-500 hidden"
+      >
+        <span class="font-medium">Oops!</span> Email is invalid, enter minimum 8
+        Characters
       </p>
     </div>
 
@@ -61,7 +85,7 @@
         <span
           class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-purple-700 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
         >
-          Submit ToDo
+          Submit your Answer
         </span>
       </button>
     </div>
