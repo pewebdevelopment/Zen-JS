@@ -32,14 +32,16 @@ function handleclick() {
 
   const li = document.createElement("li");
   li.innerHTML =
-    `<span class = p-3 text-xl>` +
+    `<div id="toDoItemContainer" class="inline-flex gap-2 justify-end items-center">` +
+    `<input checked id="teal-checkbox" type="checkbox" value="" class="w-4 h-4 text-teal-600 bg-gray-100 rounded border-gray-300 focus:ring-teal-500 dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">` +
+    `<span class = "w-3/4 mx-0">` +
     inputUsername.value +
     `</span>` +
-    `<div class="buttonscontainer">
+    `<div id="buttonscontainer" class="inline-flex gap-2">
      <button class="bg-gray-900 text-white p-3 rounded-md">Edit</button>
-     <button class="bg-gray-900 text-white p-3 rounded-md">Mark Completed</button>
      <button class="bg-gray-900 text-white p-3 rounded-md">Delete</button>
-     </div>`;
+     </div>` +
+    `</div>`;
 
   li.classList.add(
     "py-2",
