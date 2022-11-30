@@ -31,7 +31,16 @@ function handleclick() {
   console.log(inputUsername.value);
 
   const li = document.createElement("li");
-  li.innerHTML = inputUsername.value;
+  li.innerHTML =
+    `<span class = p-3 text-xl>` +
+    inputUsername.value +
+    `</span>` +
+    `<div class="buttonscontainer">
+     <button class="bg-gray-900 text-white p-3 rounded-md">Edit</button>
+     <button class="bg-gray-900 text-white p-3 rounded-md">Mark Completed</button>
+     <button class="bg-gray-900 text-white p-3 rounded-md">Delete</button>
+     </div>`;
+
   li.classList.add(
     "py-2",
     "px-4",
