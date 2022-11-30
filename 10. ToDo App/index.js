@@ -1,23 +1,14 @@
+const ToDosArr = [];
+
 const inputUsername = document.getElementById("inputUsername");
-const inputEmail = document.getElementById("inputEmail");
+
+const todoListItem = document.getElementById("todoListItem");
 
 const usernameSuccessPara = document.getElementById("usernameSuccessPara");
 const usernameFaliurePara = document.getElementById("usernameFaliurePara");
-const emailSuccessPara = document.getElementById("emailSuccessPara");
-const emailFaliurePara = document.getElementById("emailFaliurePara");
 
 console.log(inputUsername);
-console.log(inputEmail);
-
-let greenclass =
-  "bg-green-50 border border-green-500 text-green-900 placeholder-green-700  focus:ring-green-500 focus:border-green-500";
-
-let redclass;
-
-redclass = String(
-  "bg-red-50 border-red-500 text-red-900 placeholder-red-700 focus:ring-red-500 focus:border-red-500 dark:bg-red-100 dark:border-red-400"
-);
-
+// validating thr toDos
 function keyupFunc() {
   console.log("keyup");
   console.log(inputUsername.value);
@@ -34,19 +25,22 @@ function keyupFunc() {
 
 inputUsername.addEventListener("keyup", keyupFunc);
 
-inputEmail.addEventListener("keyup", () => {
-  console.log("keyup");
-  if (inputEmail.value.length >= 8) {
-    inputEmail.classList.add();
-    emailSuccessPara.classList.remove("hidden");
-    emailFaliurePara.classList.add("hidden");
-  } else {
-    inputEmail.classList.add();
-    emailFaliurePara.classList.remove("hidden");
-    emailSuccessPara.classList.add("hidden");
-  }
-});
-
 function handleclick() {
-  console.log("yolo");
+  ToDosArr.push(inputUsername.value);
+
+  console.log("inputUsername.value");
+
+  const li = document.createElement("li");
+  li.innerHTML = inputUsername.value;
+  document.getElementById("myToDosListContainer").appendChild(li);
+
+  // Displaying the toDos
+
+  // for (todo of ToDosArr) {
+  //   const li = document.createElement("li");
+  //   li.innerHTML = inputUsername.value;
+  //   document.getElementById("myToDosListContainer").appendChild(li);
+  // }
+
+  inputUsername.value = "";
 }
