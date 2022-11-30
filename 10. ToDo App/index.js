@@ -7,6 +7,8 @@ const todoListItem = document.getElementById("todoListItem");
 const usernameSuccessPara = document.getElementById("usernameSuccessPara");
 const usernameFaliurePara = document.getElementById("usernameFaliurePara");
 
+let myToDosListContainer = document.getElementById("myToDosListContainer");
+
 console.log(inputUsername);
 // validating thr toDos
 function keyupFunc() {
@@ -30,7 +32,25 @@ function handleclick() {
 
   const li = document.createElement("li");
   li.innerHTML = inputUsername.value;
-  document.getElementById("myToDosListContainer").appendChild(li);
+  li.classList.add(
+    "py-2",
+    "px-4",
+    "w-full",
+    "rounded-t-lg",
+    "border-b",
+    "border-gray-200",
+    "dark:border-gray-600",
+    "hover:bg-gray-600",
+    "overflow-hidden"
+  );
+  myToDosListContainer.appendChild(li);
+
+  // create a new li node
+  // let todoListItem = document.createElement("li");
+  // todoListItem.textContent = inputUsername.value;
+
+  // insert a new node after the last list item
+  // insertAfter(todoListItem, myToDosListContainer.lastElementChild);
 
   // Displaying the toDos
 
