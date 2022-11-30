@@ -10,8 +10,6 @@ const usernameFaliurePara = document.getElementById("usernameFaliurePara");
 console.log(inputUsername);
 // validating thr toDos
 function keyupFunc() {
-  console.log("keyup");
-  console.log(inputUsername.value);
   if (inputUsername.value.length >= 8) {
     inputUsername.classList.add("greenclass");
     usernameSuccessPara.classList.remove("hidden");
@@ -28,7 +26,7 @@ inputUsername.addEventListener("keyup", keyupFunc);
 function handleclick() {
   ToDosArr.push(inputUsername.value);
 
-  console.log("inputUsername.value");
+  console.log(inputUsername.value);
 
   const li = document.createElement("li");
   li.innerHTML = inputUsername.value;
