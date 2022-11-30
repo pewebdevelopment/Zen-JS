@@ -34,14 +34,16 @@ function keyupFunc() {
 
 inputUsername.addEventListener("keyup", keyupFunc);
 
-inputEmail.addEventListener("onkeyup", () => {
+inputEmail.addEventListener("keyup", () => {
   console.log("keyup");
   if (inputEmail.value.length >= 8) {
     inputEmail.classList.add();
     emailSuccessPara.classList.remove("hidden");
+    emailFaliurePara.classList.add("hidden");
   } else {
     inputEmail.classList.add();
     emailFaliurePara.classList.remove("hidden");
+    emailSuccessPara.classList.add("hidden");
   }
 });
 
