@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Practice</title>
+  </head>
+  <body class="bg-gray-900">
+    <!-- <h1 class="mx-auto text-center">Javascript Factorials</h1> -->
+
+    <h1
+      class="bg-gray-900 text-white mx-auto text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    >
+      JavaScript Form Validation
+    </h1>
+    <p
+      class="mx-auto text-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+    >
+      Here we are going to write awesome code to ejnoy validating forms
+    </p>
+
+    <!-- Form -->
+
+    <div class="m-6 mb-6">
+      <label
+        for="username-success"
+        class="block mb-2 text-sm font-medium text-white dark:text-white"
+        >Your name</label
+      >
+      <input
+        type="text"
+        id="inputUsername"
+        class="border text-sm rounded-lg block w-full p-2.5"
+        placeholder="Enter your name"
+      />
+      <p
+        id="usernameSuccessPara"
+        class="mt-2 text-sm text-green-600 dark:text-green-500 hidden"
+      >
+        <span class="font-medium">Alright!</span> Username is Valid!
+      </p>
+      <p
+        id="usernameFaliurePara"
+        class="mt-2 text-sm text-green-red dark:text-red-500 hidden"
+      >
+        <span class="font-medium">Oops!</span> Username is Invalid!
+      </p>
+    </div>
+    <div class="m-6">
+      <label
+        for="username-error"
+        class="block mb-2 text-sm font-medium text-white"
+        >Email</label
+      >
+      <input
+        type="text"
+        id="inputEmail"
+        class="text-sm rounded-lg block w-full p-2.5"
+        placeholder="Enter your Email"
+      />
+      <p
+        id="emailSuccessPara"
+        class="mt-2 text-sm text-green-600 dark:text-green-500 hidden"
+      >
+        <span class="font-medium">Alright!</span> Email is Valid!
+      </p>
+      <p
+        id="emailFaliurePara"
+        class="mt-2 text-sm text-green-red dark:text-red-500 hidden"
+      >
+        <span class="font-medium">Oops!</span> Email is invalid, enter minimum 8
+        Characters
+      </p>
+    </div>
+
+    <!-- //Submit button -->
+    <div class="mx-auto text-center">
+      <button
+        class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+        onclick="handleclick()"
+      >
+        <span
+          class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-purple-700 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+        >
+          Submit your Answer
+        </span>
+      </button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
