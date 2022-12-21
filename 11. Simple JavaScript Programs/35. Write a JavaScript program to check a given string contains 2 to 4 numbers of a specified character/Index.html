@@ -1,0 +1,31 @@
+<!-- 35. Write a JavaScript program to check a given string contains 2 to 4 numbers of a specified character -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function check_char(str, char) {
+            ctr = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str.charAt(i) == char) {
+                    ctr++;
+                }
+            }
+            return (ctr >= 2 && ctr <= 4);
+        }
+
+        console.log(check_char("Python", "y"));
+        console.log(check_char("JavaScript", "a"));
+        console.log(check_char("Console", "o"));
+    </script>
+</body>
+
+</html>

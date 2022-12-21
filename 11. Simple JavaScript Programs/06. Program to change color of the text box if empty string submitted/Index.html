@@ -1,0 +1,29 @@
+<!-- Program to change color of the text box if empty string submitted -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function funup(val) {
+            if (val.length > 0) document.getElementById('t1').style.borderColor = "silver";
+        }
+
+        function fun1() {
+            txt = document.getElementById('t1').value
+            if (txt.length == 0) document.getElementById('t1').style.borderColor = "red"
+        }
+    </script>
+
+    <input type="text" id="t1" onkeyup="funup(this.value)">
+    <input type="button" value="Submit" onclick="fun1()">
+</body>
+
+</html>
