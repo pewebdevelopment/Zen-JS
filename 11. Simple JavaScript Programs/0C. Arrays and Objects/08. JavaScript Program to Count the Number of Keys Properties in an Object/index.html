@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // program to count the number of keys/properties in an object
+
+        const student = {
+            name: 'John',
+            age: 20,
+            hobbies: ['reading', 'games', 'coding'],
+        };
+
+        let count = 0;
+
+        // loop through each key/value
+        for (let key in student) {
+
+            // increase the count
+            ++count;
+        }
+
+        console.log(count);
+    </script>
+</body>
+
+</html>
