@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // program to find the factors of an integer
+
+        // take input
+        const num = prompt('Enter a positive number: ');
+
+        console.log(`The factors of ${num} is:`);
+
+        // looping through 1 to num
+        for (let i = 1; i <= num; i++) {
+
+            // check if number is a factor
+            if (num % i == 0) {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+
+</html>
